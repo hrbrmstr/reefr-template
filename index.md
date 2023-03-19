@@ -1,6 +1,8 @@
 # ReefR Template
 
-## Should really just modify this file except for the OG tags in index.html
+The GH Pages version works as well, just a bit slower: <https://hrbrmstr.github.io/reefr-template/index.html>.
+
+## You should really just modify this file (not index.html) except for the OG tags in index.html
 
 <div id="message"></div>
 
