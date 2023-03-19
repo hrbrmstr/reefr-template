@@ -35,7 +35,7 @@ For GitHub:
 - tell GitHub that `/` in your main branch is where you want GH pages to be served from
 - you did update `SW_URL` in `main.js` right?
 
-NOTE: If the indicator in the message is not a 🔵, then there's a problem with your WebR configuration, likely that `SW_URL` thing.
+NOTE: If the indicator in the message is not a 🔵, then it is likely a 🌕 indicating it's not cross-origin isolated and some ops may be slower than ideal (this will likely happen in GH Pages deploys).
 
 ### Start hacking!
 

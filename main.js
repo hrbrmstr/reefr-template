@@ -61,20 +61,19 @@ message.text = "Loading WebR from r-wasm.org…";
 
 console.time('Execution Time'); // yeah i still care about this
 
-import('https://webr.r-wasm.org/latest/webr.mjs').then( // this wraps the main app code
-async ({ WebR }) => {
+import('https://webr.r-wasm.org/latest/webr.mjs').then(
+	async ({ WebR }) => {
+		
+		globalThis.webR = new WebR({
+			SW_URL: "/webr-app/"
+		});
+		await globalThis.webR.init();
 	
-	globalThis.webR = new WebR({
-	  WEBR_URL: "https://webr.r-wasm.org/latest/",	
-		SW_URL: "/reefr-template/"  // 👈🏼 needs to be your GHP main path and end in /
-	});
-	await globalThis.webR.init();
-	
-	const timerEnd = performance.now();
-	console.timeEnd('Execution Time');
+	  const timerEnd = performance.now();
+	  console.timeEnd('Execution Time');
 
-  message.text = `${crossOriginIsolated ? '🔵' : '❌'} WebR Initialized!`;
+    message.text = `${crossOriginIsolated ? '🔵' : '🌕'} WebR Initialized!`;
 
-  rversion.string = await globalThis.webR.evalRString(`R.version.string`);
+    rversion.string = await globalThis.webR.evalRString(`R.version.string`);
 	
 });
