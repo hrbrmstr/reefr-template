@@ -65,6 +65,7 @@ import('https://webr.r-wasm.org/latest/webr.mjs').then( // this wraps the main a
 async ({ WebR }) => {
 	
 	globalThis.webR = new WebR({
+	  WEBR_URL: "https://webr.r-wasm.org/latest/",	
 		SW_URL: "/reefr-template/"  // 👈🏼 needs to be your GHP main path and end in /
 	});
 	await globalThis.webR.init();
