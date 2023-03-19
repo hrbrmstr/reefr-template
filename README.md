@@ -6,13 +6,15 @@ I'll be adding helpers that are useful to me, which may be useful to others.
 
 Check out the live example: <https://rud.is/w/reefr-template/>.
 
+The GH Pages version works as well, just a bit slower: <https://hrbrmstr.github.io/reefr-template/index.html>.
+
 ### What is ReefR
 
 It is a _lightweight_ alternative to Shiny and React that uses [Reef](https://reefjs.com/) and D3 + VanillaJS and WebR to help you make data-driven, reactive apps.
 
 It also comes with a bare-bones syntax hilighter ([microlight](https://asvd.github.io/microlight/)).
 
-One core feature I wanted was the ability to use markdown instead of just HTML, so the only thing `index.thml` has is header stuff and a load of `main.js` which does all the work.
+One core feature I wanted was the ability to use markdown instead of just HTML, so the only thing `index.html` has is header stuff and a load of `main.js` which does all the work.
 
 Part of that work is to render `index.md` into the DOM, which starts the app.
 
