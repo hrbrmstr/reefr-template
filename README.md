@@ -26,8 +26,8 @@ I usually use my own install of WebR but this uses the r-wasm hosted WebR so it 
 
 In all deployments you need to:
 
-- fork this repo
-- remove the git history
+- fork this repo or download a release archive
+- remove the git history (if you forked it)
 - start new git history
 - modify `SW_URL` in `main.js` to point to the full path from `/` to the this directory
 - remember to update the OG tags!
