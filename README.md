@@ -26,7 +26,15 @@ I usually use my own install of WebR but this uses the r-wasm hosted WebR so it 
 
 In all deployments you need to:
 
-- fork this repo or download a release archive
+- fork this repo OR
+
+```
+mkdir somedir && \
+  cd somedir && \
+	curl -SL \
+	$(curl -s https://api.github.com/repos/hrbrmstr/reefr-template/releases/latest | jq -r '.tarball_url') | tar -xvz --strip-components=1`
+```
+
 - remove the git history (if you forked it)
 - start new git history
 - modify `SW_URL` in `main.js` to point to the full path from `/` to the this directory
